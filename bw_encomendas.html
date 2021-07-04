@@ -1,0 +1,81 @@
+<HTML>
+<HEAD>
+<title>Cadastro de Encomendas</title>
+
+    <script type="text/javascript">
+        function salvar_Dados(){
+            var ResponsavelRementente = document.getElementById("rr").value;
+            var ResponsavelDestinatario = documet.getElementById("rd").value;
+            var CodigodeRastreio = document.getElementById("cr").value;
+            var Origem = document.getElementById("or").value;
+            var Destino = document.getElementById("dt").value;
+            var Peso = document.getElementById("kg").value;
+            var Valor = document.getElementById("vl").value;
+
+            if(ResponsavelRementente==""|| ResponsavelDestinatario==""|| CodigodeRastreio==""|| Origem==""||
+            Destino==""|| Peso==""|| Valor=="")
+            {
+                alert("Campos não podem ser vazios. Por favor, revise.");
+            }
+        }
+            function limpar_Dados(){
+                document.getElementById("rr").value="";
+                document.getElementById("rd").value="";
+                document.getElementById("cr").value="";
+                document.getElementById("or").value="";
+                document.getElementById("dt").value="";
+                document.getElementById("kg").value="";
+                document.getElementById("vl").value="";
+            }
+        
+        function
+
+    </script>
+
+</HEAD>
+<body>
+    <CENTER>
+    <table border="0" width="30%">
+    <tr>
+        <td><center><b>CADASTRO DE ENCOMENDAS</b></center>
+        <hr align="tr" color="DarkCyan">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <form>
+            <fieldset>
+        <legend><b>Dados das Encomendas</b></legend>
+        <label for="size_1">Responsavel Remetente</label><BR>
+        <input id="rr" type="text" size="20"><BR>
+        
+        <label for="size_2">Responsavel Destinatario</label><BR>
+        <input id="rd" type="text" size="20"><BR>
+
+        <label for="size_3">Codigo de Rastreio</label><BR>
+        <input id="cr" type="text" size="10"><BR>
+        
+        <label for="size_4">Origem</label><br>
+        <input id="or" type="text" size="10"><BR>
+
+       <label for="size_5">Destino</label><br>
+        <input id="dt" type="text" size="10"><BR>
+
+        <label for="size_6">Peso</label><br>
+        <input id="kg" type="text" size="5"><BR>    
+
+        <label for="size_7">Valor</label><br>
+        <input id="vl" type="text" size="5"><BR>
+            </fieldset>
+        <hr align="tr" color="DarkCyan">
+        <center><button id="Enviar" onclick="salvar_Dados()">Enviar</button>
+            <button id="Limpar" onclick="limpar_Dados()">Limpar</button>
+        </center>
+        </form>
+        </tr>
+    </tr>
+
+</table>
+</CENTER>
+</body>
+</html>

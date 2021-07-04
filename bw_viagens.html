@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+    <title>Cadastro de Viagens</title>
+    
+    <script type="text/javascript">
+        function salvar_Dados(){
+        var Rotas = document.getElementById("rt").value;
+        var Motorista_1 = document.getElementById("mt1").value;
+        var Motorista_2 = document.getElementById("mt2").value;
+        var Ônibus = document.getElementById("onb").value;
+        var Data_da_Partida = document.getElementById("dtp").value;
+        var Plataforma = document.getElementById("plt").value;
+        var Hora = document.getElementById("hr").value;
+
+        if(Rotas=="" ||Motorista_1=="" || Motorista_2=="" ||Ônibus=="" ||Data_da_Partida=="" ||Plataforma=="" ||Hora=="")        
+        {
+            alert("Campos não podem ser vazios. Por favor, revise.");
+        }
+        }
+      function limpar_Dados(){
+      document.getElementById("rt").value="";
+      document.getElementById("mt1").value="";
+      document.getElementById("mt2").value="";
+      document.getElementById("onb").value="";
+      document.getElementById("dtp").value="";
+      document.getElementById("plt").value="";
+      document.getElementById("hr").value="";
+       }
+        
+    </script>
+</head>
+<body>
+    <center>
+    <table border=0 width=30%>
+<tr>
+    <td><center><b>CADASTRO DE VIAGENS</b></center>
+        <hr align="tr" color= "DarkCyan">
+    </td>
+</tr>
+<tr>
+<td>
+    <form>
+        <fieldset>
+            <legend><b>Dados das Viagens</b></legend>
+            <label for="size_1">Rotas</label><BR>
+            <input id="rt" type="text" size="30"><BR>
+
+            <label for="size_2">Motorista_1</label><BR>
+            <input id="mt1" type="text" size="15"><BR>
+
+            <label for="size_3">Motorista_2</label><BR>
+            <input id="mt2" type="text" size="15"><BR>
+
+            <label for="size_4">Ônibus</label><BR>
+            <input id="onb" type="text" size="10"><BR>
+            
+            <label for="size_5">Data_da_Partida</label><BR>
+            <input id="dtp" type="text" size="15"><BR>
+            
+            <label for="size_6">Plataforma</label><BR>
+            <input id="plt" type="text" size="5"><BR>
+
+            <label for="size_7">Hora</label><BR>
+            <input id="hr" type="text" size="10"><BR>
+        </fieldset>
+        <hr align="tr" color="DarkCyan">
+        <center><button id="Enviar" onclick="salvar_Dados()">Enviar</button>
+        <button id="Limpar" onclick="limpar_Dados()">Limpar</button></center>
+    </form>
+</td>
+</tr>
+</table>
+</center>
+ </body>
+</HTML>

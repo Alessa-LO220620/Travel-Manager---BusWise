@@ -1,0 +1,81 @@
+<HTML>
+<HEAD>
+        <meta charset="utf-8">
+ <TITLE>Cadastro de Onibus</TITLE>
+<script type="text/javascript">
+      function salvar_Dados(){
+        var NumerodoOnibus = document.getElementById("num").value;
+        var Placa = document.getElementById("pl").value;
+        var Modelo = document.getElementById("md").value;
+        var QuantidadedePoltronas = document.getElementById("qtd").value;
+        var Ano = document.getElementById("an").value;
+        var Observacoes = document.getElementById("obs").value;
+
+        if(NumerodoOnibus=="" ||Placa=="" ||Modelo=="" ||QuantidadedePoltronas=="" ||Ano=="" ||Observacoes=="")
+        {
+          alert("Campos não podem ser vazios. Por favor, revise.");
+          }
+}
+      function limpar_Dados(){
+      document.getElementById("num").value="";
+      document.getElementById("pl").value="";
+      document.getElementById("md").value="";
+      document.getElementById("qtd").value="";
+      document.getElementById("an").value="";
+      document.getElementById("obs").value="";
+      }
+
+</script>
+ </HEAD>
+<BODY>
+  <center>
+<table border="0" width="30%">
+
+<TR>
+    <td><center><b>CADASTRO DE ÔNIBUS</b></center>
+    <hr align="tr" color="DarkCyan">
+</td>
+</TR>
+<TR>
+    <td>
+        <form>
+        <fieldset>
+        <legend><b>Dados do Veículo></b></legend>
+        <label for="size_1">Número do ônibus</label><BR>
+        <input id="num" type="text" size="10"><BR>
+        
+        <label for="size_2">Placa</label><BR>
+        <input id="pl" type="text" size="10"><BR>
+        
+        <label for="size_3">Modelo</label><BR>
+        <input id="md" type="text" size="10"><BR>
+        
+        <label for="size_4">Quantidade de Poltronas</label><BR>
+        <input id="qtd" type="text" size="10"><BR>
+        
+        <label for="size_5">Ano</label><BR>
+        <select id="an" size="1">
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        </select><BR>
+        
+        <label for="size_6">Observações</label><BR>
+        <input id="obs" type="text" size="50"><BR><BR>
+</fieldset>
+     <hr align="tr" color="DarkCyan">
+<center><button id="Enviar" onclick="salvar_Dados()">Enviar</button>
+        <button id="Limpar" onclick="limpar_Dados()">Limpar</button>
+</center>
+</form>
+
+</td>
+</TR>
+</table>
+</center>
+</BODY>
+</HTML>
