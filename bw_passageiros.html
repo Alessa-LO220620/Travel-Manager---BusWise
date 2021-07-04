@@ -1,0 +1,116 @@
+<HTML>
+<head>
+        <title>Cadastro de Passageiros</title>
+        
+        <script type="text/javascript">
+            function salvar_Dados(){
+              var NomeCompleto = document.getElementById("nc").value;
+              var Sexo = document.getElementById("sx").value;
+              var Documento = document.getElementById("doc").value;
+              var Documento = document.getElementById("docn").value;
+              var Passageiro = document.getElementById("pas").value;
+              var TelefonedeContato = document.getElementById("ddd").value;
+              var TelefonedeContato = document.getElementById("telc").value;
+              var Embarque = document.getElementById("emb").value;
+              var Desembarque = document.getElementById("des").value;
+              var PoltronasDisponiveis = document.getElementById("pol").value;
+              var ValordaPassagem = document.getElementById("val").value;
+              var FormadePagamento = document.getElementById("pgt").value;
+                    
+              if(NomeCompleto==""|| Embarque==""|| PoltronasDisponiveis==""|| Passageiro==""||
+              Documento==""|| TelefonedeContato==""|| FormadePagamento=="" || ValordaPassagem==""|| Sexo=="")
+              {
+                alert("Campos não podem ser vazios. Por favor, revise.");
+              }
+        }
+        function limpar_Dados(){
+            document.getElementById("nc").value="";
+            document.getElementById("sx").value="";
+            document.getElementById("doc").value="";
+            document.getElementById("docn").value="";
+            document.getElementById("pas").value="";
+            document.getElementById("ddd").value="";
+            document.getElementById("telc").value="";
+            document.getElementById("emb").value="";
+            document.getElementById("des").value="";
+            document.getElementById("pol").value="";
+            document.getElementById("val").value="";
+            document.getElementById("pgt").value="";
+      }
+      </script>   
+    
+</head>
+<body>
+    <center>
+    <table border="0" width="30%">
+<tr>
+    <td><center><b>CADASTRO DE PASSAGEIROS</b></center>
+        <hr align="tr" color="DarkCyan">
+    </td>
+</tr>
+<tr>
+<td>
+    <form>
+        <fieldset>
+            <legend><b>Dados dos Passageiros<b></legend>
+            <label for="size_1">Nome Completo</label><BR>
+            <input id="nc" type="text" size="50"><BR>
+
+            <label for="size_2">Sexo</label><BR>
+            <select id="sx" size="1">
+                <option value="Feminino">Feminino</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Não Binário">Não Binário</option>
+                <opton value="Transgênero">Transgênero</opton>
+                <option value="Não se identifica com nenhuma opção">Não se identifica
+                com nenhuma opção</option>
+            </select><BR>
+
+            <label for="size_3">Documento</label><BR>
+            <select id="doc" size="1">
+                    <option value="CPF">CPF</option>
+                    <option value="RG">RG</option>
+                    <option value="Passaporte">Passaporte</option>
+            </select>
+            <input id="docn" type="text" size="10"><BR>
+
+            <label for="size_4">Passageiro</label><BR>
+            <select id="pas" size="1">
+                    <option value="Adulto">Adulto</option>
+                    <option value="Idoso">Idoso</option>
+                    <option value="Criança">Criança</option>
+            </select><BR>
+            
+            <label for="size_5">Telefone de Contato</label><BR>
+            <input id="ddd" type="text" size="2">
+            <input id="telc" type="text" size="10"><BR>
+            
+            <label for="size_6">Embarque</label><BR>
+            <input id="emb" type="text" size="10"><BR>
+
+            <label for="size_7">Desembarque</label><BR>
+            <input id="des" type="text" size="10"><BR>
+
+            <label for="size_8">Poltronas Disponíveis</label><BR>
+            <input id="pol" type="number" size="2"><BR>
+            
+            <label for="size_7">Valor da Passagem</label><BR>
+            <input id="val" type="text" size="5"><BR>
+
+            <label for="size_8">Forma de Pagamento</label><BR>
+            <select id="pgt" size="1">
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Cartão Débito/Crédito">Cartão Débito/Crédito</option>
+                <option value="PIX">PIX</option>
+            </select><BR>
+        </fieldset>
+        <hr align="tr" color="DarkCyan">
+        <center><button id="Enviar" onclick="salvar_Dados()">Enviar</button>
+        <button id="Limpar" onclick="limpar_Dados()">Limpar</button></center>
+    </form>
+</td>
+</tr>
+</table>
+</center>
+ </body>
+</html>

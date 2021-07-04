@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+ <TITLE>Cadastro de Rotas</TITLE>
+
+ <script type="text/javascript">
+        function salvar_Dados(){
+        var EstadodeOrigem = document.getElementById("eso").value;
+        var CidadedeOrigem = document.getElementById("cdo").value;
+        var EstadodeDestino= document.getElementById("esd").value;
+        var CidadedeDestino= document.getElementById("cdd").value;
+                
+        if(EstadodeOrigem=="" ||CidadedeOrigem=="" ||EstadodeDestino=="" ||CidadedeDestino=="")
+        {
+          alert("Campos nao podem ser vazios. Por favor, revise.");
+          }
+}
+      function limpar_Dados(){
+      document.getElementById("eso").value="";
+      document.getElementById("cdo").value="";
+      document.getElementById("esd").value="";
+      document.getElementById("cdd").value="";
+       }
+
+</script>
+</HEAD>
+
+<BODY>
+  <center>
+      <table border="0" width="30%">
+<tr>
+  <td><center><b>CADASTRO DE ROTAS</b></center>
+  <hr align="tr" color="DarkCyan">
+  </td>
+  </tr>
+<tr>
+  <td>
+  <form>
+  <fieldset>
+  <legend><b>Dados das Rotas</b></legend>
+   <label for="size_1">Estado de Origem</label> <BR>
+   <select id="eso" size="1">
+       <option value="AC">AC</option>
+       <option value="AP">AP</option>
+       <option value="AM">AM</option>
+       <option value="PA">PA</option>
+       <option value="RO">RO</option>
+       <option value="RR">RR</option>
+       <option value="TO">TO</option>
+       </select><BR>
+   <label for="size_2">Cidade de Origem</label> <BR>
+  <input id="cdo" type="text" size="20"><BR>
+
+  <label for="size_3">Estado de Destino</label> <BR>
+  <select id="esd" type="text" size="1">
+    <option value="AC">AC</option>
+       <option value="AP">AP</option>
+       <option value="AM">AM</option>
+       <option value="PA">PA</option>
+       <option value="RO">RO</option>
+       <option value="RR">RR</option>
+       <option value="TO">TO</option>
+    </select><BR>
+  <label for="size_4">Cidade de Destino</label> <BR>
+  <input id="cdd" type="text" size="20"> <BR>
+  </fieldset>
+  
+  '<hr align="tr" color="DarkCyan">
+<center><button id="Enviar" onclick="salvar_Dados()">Enviar</button>
+     <button id="Limpar" onclick="limpar_Dados()">Limpar</button>
+</center>
+</form>
+
+  </td>
+</tr>
+</table>
+</center>
+ </BODY>
+</HTML>

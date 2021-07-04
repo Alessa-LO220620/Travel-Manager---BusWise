@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+ <TITLE>Cadastro de Motoristas</TITLE>
+
+ <script type="text/javascript">
+        function salvar_Dados(){
+        var Nome = document.getElementById("nm").value;
+        var Telefone = document.getElementById("tl").value;
+        var CidadedeOrigem= document.getElementById("cio").value;
+        var CNH = document.getElementById("cnh").value;
+        var TipoSanguineo = document.getElementById("tsg").value;
+        
+        if(Nome=="" ||Telefone=="" ||CidadedeOrigem=="" ||CNH=="" ||TipoSanguineo=="")
+        {
+          alert("Campos nao podem ser vazios. Por favor, revise.");
+          }
+}
+      function limpar_Dados(){
+      document.getElementById("nm").value="";
+      document.getElementById("tl").value="";
+      document.getElementById("cio").value="";
+      document.getElementById("cnh").value="";
+      document.getElementById("tsg").value="";
+      }
+
+
+</script>
+</HEAD>
+
+<BODY>
+  <center>
+      <table border="0" width="30%">
+<tr>
+  <td><center><b>CADASTRO DE MOTORISTAS</b></center>
+  <hr color="DarkCyan">
+  </td>
+</tr>
+<tr>
+  <td>
+  <form>
+  <fieldset>
+  <legend><b>Dados do Motorista</b></legend>
+   <label for="size_1">Nome</label> <BR>
+   <input id="nm" type="text" size="30"> <BR>
+
+   <label for="size_2">Telefone</label> <BR>
+  <input id="tl" type="text" size="15"> <BR>
+
+  <label for="size_3">Cidade de Origem</label> <BR>
+  <input id="cio" type="text" size="15"><BR>
+
+  <label for="size_4">CNH</label> <BR>
+  <input id="cnh" type="text" size="15"> <BR>
+
+  <label for="size_5">Tipo Sanguineo</label> <BR>
+  <input id="tsg" type="text" size="15"> <BR>
+
+  </fieldset>
+  <hr align="tr" color="DarkCyan">
+<center><button id="Enviar" onclick="salvar_Dados()">Enviar</button>
+     <button id="Limpar" onclick="limpar_Dados()">Limpar</button>
+</center>
+</form>
+
+  </td>
+</tr>
+</table>
+</center>
+ </BODY>
+</HTML>
