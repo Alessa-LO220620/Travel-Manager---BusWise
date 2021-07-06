@@ -1,5 +1,5 @@
 # Bus Travel Manager System - BusWise
-An experiment about create a system that can be used by travel agencies allowing fill in datas from the HR department to mailing packages.
+An experiment about creates a system that can be used by travel agencies allowing fill in data from the HR department to mailing packages.
 
 <p align="center">
     <img width="600" height="300" src="buswise.png">
